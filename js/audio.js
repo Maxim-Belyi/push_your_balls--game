@@ -3,14 +3,14 @@ export const Sounds = {
   isPlaying: true,
   isMuted: false,
   init() {
-    this.audio.main = new Audio("../media/main-theme.mp3");
+    this.audio.main = new Audio("https://github.com/Maxim-Belyi/push_your_balls--game/blob/main/media/main-theme.mp3");
     this.audio.main.volume = 0.3;
     this.audio.main.loop = true;
 
-    this.audio.larvaEaten = new Audio("../media/larva-eaten.mp3");
+    this.audio.larvaEaten = new Audio("https://github.com/Maxim-Belyi/push_your_balls--game/blob/main/media/larva-eaten.mp3");
     this.audio.larvaEaten.volume = 0.2;
 
-    this.audio.larvaSaved = new Audio("../media/larva-saved.mp3");
+    this.audio.larvaSaved = new Audio("https://github.com/Maxim-Belyi/push_your_balls--game/blob/main/media/larva-saved.mp3");
     this.audio.larvaSaved.volume = 0.2;
   },
 
