@@ -1,5 +1,5 @@
 <br>
-<h1 align="center"><a href="https://maxim-belyi.github.io/pet_Car-Game/" target="_blank"> "Push your balls" </a> Vanilla js game
+<h1 align="center"><a href="https://maxim-belyi.github.io/push_your_balls--game/" target="_blank"> "Push your balls" </a> Vanilla js game
 <br>
 <br> 
 <h4 align="center">Push eggs and larvae to the top of the screen
