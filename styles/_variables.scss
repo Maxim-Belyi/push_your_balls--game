@@ -1,0 +1,13 @@
+@use './helpers' as *;
+
+:root {
+    --color-teal: #05b69e;
+    --background: rgba(44, 44, 44, 0.815);
+    --color-light: #ffffff;
+    --font-family-base:'bangers-regular', sans-serif;
+    --color-red: #f5236c;
+    --color-red-accent: #5b0623;
+
+    --transition-duration: 0.5s;
+}
+

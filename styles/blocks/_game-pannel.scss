@@ -1,0 +1,39 @@
+@use '../helpers' as *;
+
+.game-pannel {
+    
+    &__player-score {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: var(--background);
+    border-radius: rem(15);
+    top: rem(15);
+    left: rem(30);
+    }
+
+    &__enemy-score {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        position: absolute;
+        background-color: var(--background);
+        border-radius: rem(15);
+        top: rem(15);
+        right: rem(30);
+    }
+
+    &__sound-toggle {
+        position: absolute;
+        top: 3%;
+        left: 15%;
+        border: none;
+        background-color: var(--background);
+        border-radius: rem(15);
+       
+        &:hover {
+            transform: scale(0.9);
+            transition-duration: var(--transition-duration);
+        }
+    }
+}

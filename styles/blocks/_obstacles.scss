@@ -1,0 +1,10 @@
+@use '../helpers' as *;
+
+.obstacles,
+.bull,
+.egg,
+.enemy-toad,
+.larva {
+    display: none;
+}
+

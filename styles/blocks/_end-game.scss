@@ -1,0 +1,56 @@
+@use '../helpers' as *;
+
+.end-game {
+    position: absolute;
+    top: 8%;
+    left: 37%;
+    color: var(--color-light);
+    user-select: none;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        padding-left: 200px;
+        border-radius: rem(15);
+        background: var(--background);
+        padding: rem(40) rem(60);
+    }
+
+    &__title-win {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+
+        & p:nth-child(1) {
+            font-size: fluid(84, 36);
+            color: var(--color-red);
+        }
+
+        & p:nth-child(2) {
+            padding-top: rem(60);
+            font-size: fluid(94, 36);
+            text-decoration: underline;
+            text-underline-offset: rem(10);
+        }
+
+
+        & p:nth-child(3) {
+            padding-top: rem(60);
+            font-size: fluid(46, 24);
+        }
+
+
+        & p:nth-child(4) {
+            padding-top: rem(60);
+            font-size: fluid(46, 24);
+        }
+
+        & p:nth-child(5) {
+            padding-top: rem(40);
+            font-size: fluid(32, 24);
+            color: var(--color-teal); 
+        }
+    }
+}

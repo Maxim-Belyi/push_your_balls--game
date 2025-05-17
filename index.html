@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulls Eye!</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+
+    <div class="start-game" id="start-game-div">
+        <div class="start-game__wrapper">
+            <p class="start-game__subtitle">Welcome to </p>
+            <h1 class="start-game__title">«Save your balls»</h1>
+            <div class="start-game__target">
+                <p>Protect your </p>
+                <img src="./images/egg.png" alt="" width="55" height="55">
+                <p>and score 100 points</p>
+            </div>
+
+            <div class="start-game__description">
+                <p>You can push </p>
+                <img src="./images/egg.png" alt="" width="55" height="55">
+                <p>and</p>
+                <img src="./images/larva_crawl.png" alt="" width="55" height="55">
+                <p>into the forest</p>
+            </div>
+
+            <div class="start-game__rules">
+                <p>The</p>
+                <img src="./images/toad.png" alt="" width="55" height="55">
+                <p>cannot eat the</p>
+                <img src="./images/egg.png" alt="" width="55" height="55">
+                <p>but can eat the</p>
+                <img src="./images/larva_crawl.png" alt="" width="55" height="55">
+            </div>
+            <div class="start-game__button-wrapper">
+                <button class="start-game__button" id="start-game-button" type="button">Lets go!</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="end-game visually-hidden" id="end-game-div">
+        <div class="end-game__wrapper">
+            <div class="end-game__title-win" id="end-game__title-win">
+                <p>Congratulations!</p>
+                <p>You Win!</p>
+                <p>Final score: <span id="score-html-display"></span></p>
+                <p>Lost hatchlings: <span id="score-html-hatchling"></span></p>
+                <p>for new game press "ctrl + r"</p>
+            </div>
+
+           
+        </div>
+    </div>
+
+    <canvas class="canvas1" id="canvas1"></canvas>
+    <img class="obstacles" id="obstacles" src="./images/obstacles.png" alt="">
+    <img class="bull" id="bull" src="./images/bull.png" alt="">
+    <img class="egg" id="egg" src="./images/egg.png" alt="">
+    <img class="enemy-toad" id="toad" src="./images/toads-alt2.png" alt="">
+    <img class="larva" id="larva" src="./images/larva.png" alt="">
+
+    <div class="game-pannel">
+
+        <div class="game-pannel__player-score">
+            <span class="player-score__title title">
+                <img class="player-score__img" src="./images/larva_crawl2.png" alt="">
+            </span>
+
+            <span class="game-pannel__player-value value">
+                <p id="player-score-value">0</p>
+            </span>
+        </div>
+
+        <button class="game-pannel__sound-toggle" id="music-toggle">
+
+            <span class="game-pannel__button  " id="game-sound-on">
+                <svg width="80px" height="80px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                    class="icon multi-color">
+                    <title style="stroke-width: 2;">sound on</title>
+                    <path id="secondary-fill" d="M7,9v6H4a1,1,0,0,1-1-1V10A1,1,0,0,1,4,9Z"
+                        style="fill: rgb(44, 169, 188); stroke-width: 2;"></path>
+                    <path id="primary-stroke" d="M11,5V19L7,15H4a1,1,0,0,1-1-1V10A1,1,0,0,1,4,9H7Z"
+                        style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+                    </path>
+                    <path id="tertiary-stroke" d="M18.36,5.64a9,9,0,0,1,0,12.72m-2.82-2.82a5,5,0,0,0,0-7.08"
+                        style="fill: none; stroke: #b7b7b7; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+                    </path>
+                </svg>
+            </span>
+
+            <span class="game-pannel__off visually-hidden" id="game-sound-off">
+                <svg width="80px" height="80px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                    class="icon multi-color">
+                    <title style="stroke-width: 2;">sound mute</title>
+                    <path id="tertiary-fill" d="M7,9v6H4a1,1,0,0,1-1-1V10A1,1,0,0,1,4,9Z"
+                        style="fill: #b7b7b7; stroke-width: 2;"></path>
+                    <path id="primary-stroke" d="M11,5V19L7,15H4a1,1,0,0,1-1-1V10A1,1,0,0,1,4,9H7Z"
+                        style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+                    </path>
+                    <path id="secondary-stroke" d="M16,14.5l5-5m-5,0,5,5"
+                        style="fill: none; stroke: rgb(44, 169, 188); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+                    </path>
+                </svg>
+            </span>
+        </button>
+
+
+        <div class="game-pannel__enemy-score">
+            <span class="enemy-score__title title">
+                <img src="./images/larva_crawl-crossed-out.png" alt="" class="">
+            </span>
+
+            <span class="game-pannel__enemy-value value">
+                <p id="enemy-score-value">0</p>
+            </span>
+        </div>
+    </div>
+
+    <script src="./main.js" type="module"></script>
+
+</body>
+
+</html>

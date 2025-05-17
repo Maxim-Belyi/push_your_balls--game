@@ -1,0 +1,94 @@
+@use '../helpers' as *;
+
+.start-game {
+    position: absolute;
+    padding-top: rem(30);
+    background-color: none;
+    width: 100%;
+    height: 100%;
+    color: var(--color-light);
+    user-select: none;
+    
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        border-radius: rem(15);
+        background: var(--background);
+        width: 50%;
+        padding: rem(20) rem(20);
+    }
+
+    &__subtitle {
+       font-size: fluid(46, 24);
+       text-decoration: underline;
+       text-underline-offset: rem(10);
+       font-family: var(--font-family-accent);
+       letter-spacing: rem(4);
+    }
+
+    &__title {
+        font-size: fluid(84, 36);
+        padding-top: rem(10);
+        color: var(--color-red);
+        
+    }
+    
+    &__target {
+        display: grid;
+        align-items: center;
+        column-gap: rem(20);
+        grid-template-columns: repeat(3, max-content);
+        padding-top: rem(60);
+        font-size: fluid(42, 18);
+        
+    }
+
+    &__description {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(5, max-content);
+        padding-top: rem(40);
+        font-size: fluid(36, 18);
+        column-gap: rem(20);
+    }
+
+    &__rules {
+        display: grid;
+        align-items: center;
+        font-size:  fluid(36, 18);
+        grid-template-columns: repeat(6, max-content);
+        column-gap: rem(20);
+        padding-top: rem(30);
+
+        @media(max-width: 1610px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-inline: rem(40);
+        }
+    }
+
+    &__button-wrapper {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: rem(40) rem(20);
+        font-size: rem(36);
+        padding: rem(10) rem(50);
+        border-radius: rem(15);
+        background-color: var(--color-red-accent);
+        color: var(--color-light);
+        &:hover {
+            transform: scale(1.1);
+            transition-duration: var(--transition-duration);
+        }
+    }
+}

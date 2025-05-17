@@ -1,0 +1,8 @@
+@use '../helpers' as *;
+
+.value {
+    font-family: var(--font-family-base);
+    padding: rem(20);
+    font-size: rem(52);
+    color: var(--color-light);
+}

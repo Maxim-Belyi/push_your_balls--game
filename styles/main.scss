@@ -1,0 +1,17 @@
+@use 'normalize';
+@use 'fonts';
+@use 'variables';
+@use 'globals';
+@use 'utils';
+
+@use 'blocks/start-game';
+@use 'blocks/environment';
+@use 'blocks/game-pannel';
+@use 'blocks/obstacles';
+@use 'blocks/title';
+@use 'blocks/value';
+@use 'blocks/end-game';
+
+
+
+
