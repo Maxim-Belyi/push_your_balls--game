@@ -309,7 +309,7 @@ svg * {
 .end-game {
   position: absolute;
   top: 8%;
-  left: 37%;
+  left: 35%;
   color: var(--color-light);
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -318,7 +318,6 @@ svg * {
 .end-game__wrapper {
   display: flex;
   flex-direction: column;
-  padding-left: 200px;
   border-radius: 0.9375rem;
   background: var(--background);
   padding: 2.5rem 3.75rem;

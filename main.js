@@ -252,7 +252,7 @@ window.addEventListener("load", function () {
       this.eggInterval = eggsAppearanceInterval;
       this.numberOfObstacles = numberOfObstacles;
       this.maxEggs = maxNumberOfEggs;
-      this.winningScore = 10;
+      this.winningScore = 100;
       this.obstacles = [];
       this.enemies = [];
       this.eggs = [];

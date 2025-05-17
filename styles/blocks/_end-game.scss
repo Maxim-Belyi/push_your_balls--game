@@ -3,14 +3,13 @@
 .end-game {
     position: absolute;
     top: 8%;
-    left: 37%;
+    left: 35%;
     color: var(--color-light);
     user-select: none;
 
     &__wrapper {
         display: flex;
         flex-direction: column;
-        padding-left: 200px;
         border-radius: rem(15);
         background: var(--background);
         padding: rem(40) rem(60);
