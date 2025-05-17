@@ -25,6 +25,12 @@ window.addEventListener("load", function () {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 
+  ctx.fillStyle = "white";
+  ctx.lineWidth = 3;
+  ctx.strokeStyle = "black";
+  ctx.font = "50px Bangers, cursive";
+  ctx.textAlign = "center";
+
   class Egg {
     constructor(game) {
       this.game = game;
