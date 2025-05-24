@@ -97,7 +97,6 @@ export class Player {
         this.collisionY = this.game.height - this.collisionRadius;
 
       //--------
-
       //collision with obstacles!
       this.game.obstacles.forEach((obstacle) => {
         //[(distance < sumOfRadii), distance, sumOfRadii, dx, dy]
