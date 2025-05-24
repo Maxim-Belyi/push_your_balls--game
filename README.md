@@ -2,7 +2,7 @@
 <h1 align="center"><a href="https://maxim-belyi.github.io/push_your_balls--game/" target="_blank"> "Push your balls" </a> vanilla js game
 <br>
 <br> 
-![image](https://github.com/Maxim-Belyi/push_your_balls--game/blob/main/images/bull.png?raw=true)
+<img href="https://github.com/Maxim-Belyi/push_your_balls--game/blob/main/images/bull.png?raw=true">
 <h3 align="center">Not adapted, does not work on touch devices
 <br>
 <h3 align="center">Push eggs and larvae to the top of the screen
