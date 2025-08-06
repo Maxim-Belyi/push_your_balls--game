@@ -32,7 +32,7 @@
 
 2.  **Перейдите в папку проекта:**
     ```bash
-    cd medieval-times
+    cd push_your_balls--game
     ```
 
 3.  **Установите зависимости:**
