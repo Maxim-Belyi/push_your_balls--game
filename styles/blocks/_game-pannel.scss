@@ -1,15 +1,19 @@
 @use '../helpers' as *;
 
 .game-pannel {
-    
+
     &__player-score {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    background-color: var(--background);
-    border-radius: rem(15);
-    top: rem(15);
-    left: rem(30);
+        display: flex;
+        align-items: center;
+        position: absolute;
+        background-color: var(--background);
+        border-radius: rem(15);
+        top: rem(15);
+        left: rem(30);
+    }
+
+    &__image {
+        padding: rem(10);
     }
 
     &__enemy-score {
@@ -19,8 +23,20 @@
         position: absolute;
         background-color: var(--background);
         border-radius: rem(15);
-        top: rem(15);
-        right: rem(30);
+        top: rem(10);
+        right: rem(20);
+    }
+
+    &__enemy-value {
+        &>p {
+            font-size: fluid(32, 16);
+        }
+    }
+
+    &__player-value {
+        &>p {
+            font-size: fluid(32, 16);
+        }
     }
 
     &__sound-toggle {
@@ -30,7 +46,18 @@
         border: none;
         background-color: var(--background);
         border-radius: rem(15);
-       
+
+        @include tablet {
+            left: 20%;
+        }
+
+        &>span {
+            &>svg {
+                height: auto;
+                width: fluid(60, 20);
+            }
+        }
+
         &:hover {
             transform: scale(0.9);
             transition-duration: var(--transition-duration);

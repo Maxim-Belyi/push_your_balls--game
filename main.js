@@ -10,6 +10,8 @@ import {
   enemyHatchlings,
   numberOfObstacles,
   gameFps,
+  startGameWrapper,
+  startGameButton,
 } from "./js/variables.js";
 
 window.addEventListener("load", function () {
@@ -59,8 +61,6 @@ window.addEventListener("load", function () {
         pressed: false,
       };
 
-      const startGameWrapper = document.getElementById("start-game-div");
-      const startGameButton = document.getElementById("start-game-button");
       if (
         startGameButton.addEventListener("click", () => {
           musicToggle.disabled = false;

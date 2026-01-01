@@ -9,3 +9,5 @@ export let maxNumberOfEggs = 7;
 export let eggsAppearanceInterval = 2000;
 export let numberOfEnemies = 4;
 export const gameFps = 30;
+export const startGameWrapper = document.getElementById("start-game-div");
+export const startGameButton = document.getElementById("start-game-button");

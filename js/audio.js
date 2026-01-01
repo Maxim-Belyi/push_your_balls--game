@@ -42,8 +42,4 @@ export const Sounds = {
   },
 };
 
-// document.getElementById("music-toggle")?.addEventListener("click", () => {
-//   Sounds.toggleMute();
-// });
-
 Sounds.init();

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,26 +15,27 @@
             <p class="start-game__subtitle">Welcome to </p>
             <h1 class="start-game__title">«Save your balls»</h1>
             <div class="start-game__target">
-                <p>Protect your </p>
-                <img src="./images/egg.png" alt="" width="55" height="55">
-                <p>and score 100 points</p>
+                <p>Protect your 
+                    &nbsp<img class="image" src="./images/egg.png" alt="" width="55" height="55">&nbsp
+                and score 100 points</p>
             </div>
 
             <div class="start-game__description">
-                <p>You can push </p>
-                <img src="./images/egg.png" alt="" width="55" height="55">
-                <p>and</p>
-                <img src="./images/larva_crawl.png" alt="" width="55" height="55">
-                <p>into the forest</p>
+                <p>You can push 
+                    &nbsp<img class="image" src="./images/egg.png" alt="" width="55" height="55">&nbsp
+                and
+                &nbsp<img class="image" src="./images/larva_crawl.png" alt="" width="55" height="55">&nbsp
+                into the forest</p>
             </div>
 
             <div class="start-game__rules">
-                <p>The</p>
-                <img src="./images/toad.png" alt="" width="55" height="55">
-                <p>cannot eat the</p>
-                <img src="./images/egg.png" alt="" width="55" height="55">
-                <p>but can eat the</p>
-                <img src="./images/larva_crawl.png" alt="" width="55" height="55">
+                <p>The
+                    &nbsp<img class="image" src="./images/toad.png" alt="" width="55" height="55">&nbsp
+                    cannot eat the  
+                    &nbsp<img class="image" src="./images/egg.png" alt="" width="55" height="55">&nbsp
+                    but can eat the
+                    &nbsp<img class="image" src="./images/larva_crawl.png" alt="" width="55" height="55">&nbsp
+                </p>
             </div>
             <div class="start-game__button-wrapper">
                 <button class="start-game__button" id="start-game-button" type="button">Lets go!</button>
@@ -55,17 +57,17 @@
     </div>
 
     <canvas class="canvas1" id="canvas1"></canvas>
-    <img class="obstacles" id="obstacles" src="./images/obstacles.avif" alt="">
-    <img class="bull" id="bull" src="./images/bull.avif" alt="">
-    <img class="egg" id="egg" src="./images/egg.png" alt="">
-    <img class="enemy-toad" id="toad" src="./images/toads-alt2.avif" alt="">
-    <img class="larva" id="larva" src="./images/larva.png" alt="">
+    <img class="obstacles image" id="obstacles" src="./images/obstacles.avif" alt="">
+    <img class="bull image" id="bull" src="./images/bull.avif" alt="">
+    <img class="egg image" id="egg" src="./images/egg.png" alt="">
+    <img class="enemy-toad image" id="toad" src="./images/toads-alt2.avif" alt="">
+    <img class="larva image" id="larva" src="./images/larva.png" alt="">
 
     <div class="game-pannel">
 
         <div class="game-pannel__player-score">
-            <span class="player-score__title title">
-                <img class="player-score__img" src="./images/larva_crawl2.png" alt="">
+            <span class="game-pannel__image">
+                <img class="player-score__img image" src="./images/larva_crawl2.png" alt="">
             </span>
 
             <span class="game-pannel__player-value value">
@@ -75,7 +77,7 @@
 
         <button class="game-pannel__sound-toggle" id="music-toggle">
 
-            <span class="game-pannel__button  " id="game-sound-on">
+            <span class="game-pannel__icon--on  " id="game-sound-on">
                 <svg width="80px" height="80px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
                     class="icon multi-color">
                     <title style="stroke-width: 2;">sound on</title>
@@ -90,7 +92,7 @@
                 </svg>
             </span>
 
-            <span class="game-pannel__off visually-hidden" id="game-sound-off">
+            <span class="game-pannel__icon--off visually-hidden" id="game-sound-off">
                 <svg width="80px" height="80px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
                     class="icon multi-color">
                     <title style="stroke-width: 2;">sound mute</title>
@@ -106,10 +108,9 @@
             </span>
         </button>
 
-
         <div class="game-pannel__enemy-score">
-            <span class="enemy-score__title title">
-                <img src="./images/larva_crawl-crossed-out.png" alt="" class="">
+            <span class="game-pannel__image">
+                <img class="image" src="./images/larva_crawl-crossed-out.png" alt="">
             </span>
 
             <span class="game-pannel__enemy-value value">
